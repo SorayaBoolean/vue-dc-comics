@@ -1,7 +1,7 @@
 <template>
   <div>
     
-    <nav>
+    <nav class="container">
         <a href="#">
             <img src="@/assets/img/dc-logo.png" alt="logo">
         </a>
@@ -46,6 +46,10 @@
       display: flex;
       align-items: center;
       font-size: smaller;
+        a {
+            color: rgb(27, 27, 27);
+        }
+     
     }
   }
   nav {
@@ -54,7 +58,7 @@
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1000px;
 
     img {
       height: 70px;

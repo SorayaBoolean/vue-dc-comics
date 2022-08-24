@@ -1,13 +1,40 @@
 <template>
-    <div>
-        <section class="contents"> <h3> Content goes here </h3> </section>
-        <section class="shop_nav">
-            <li> <a href="#">DIGITAL COMICS</a></li>
-            <li> <a href="#">DC MERCHANDISE</a></li>
-            <li> <a href="#">SUBSCRIPTION</a></li>
-            <li> <a href="#">COMIC SHOP LOCATOR</a></li>
-             <li> <a href="#">DC POWER VISA</a></li>
+    <div id="main">
+        <section class="main container">
+            <section class="contents"> 
+                <div class="contents_row">
+                    <h3> >Contents goes here </h3> 
+                </div>
+                
+            </section>
+
+            <section class="shop_nav">
+                <ul>
+                    <li> 
+                        <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
+                        <a href="#">DIGITAL COMICS</a>
+                    </li>
+                    <li> 
+                        <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
+                        <a href="#">DC MERCHANDISE</a>
+                    </li>
+                    <li> 
+                        <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
+                        <a href="#">SUBSCRIPTION</a>
+                    </li>
+                    <li> 
+                        <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
+                        <a href="#">COMIC SHOP LOCATOR</a>
+                    </li>
+                    <li> 
+                        <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
+                        <a href="#">DC POWER VISA</a>
+                    </li>
+                </ul>
+            </section>
+
         </section>
+        
 
     </div>
 </template>
@@ -22,6 +49,58 @@
 </script>
 
 
+
+
 <style scoped lang="scss">
+
+.contents {
+    background-color: #1C1C1C;
+    height: 80px;
+    color: white;
+
+    .contents_row{
+        margin: auto;
+        height: 100%;
+        max-width: 1000px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.shop_nav {
+    display: flex;
+    align-items: center;
+    background-color: #0282F9;
+    height: 100px;
+
+    ul{
+        height: 100%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        margin:auto;
+         li{
+            display:flex;
+            align-items: center;
+            margin: 20px;
+            font-weight: bold;
+            font-size: x-small;
+            a{
+                color:white;
+            }    
+         }
+         img {
+            height: 70px;
+            widows: 70px;
+            margin: 10px;
+         }
+    }
+
+}
+
+
+
+
 
 </style>

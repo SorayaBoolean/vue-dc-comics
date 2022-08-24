@@ -38,7 +38,6 @@ ul {
 
   li a{
     text-decoration: none;
-    color: black;
   }
 }
 </style>

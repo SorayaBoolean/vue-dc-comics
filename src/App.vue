@@ -23,10 +23,22 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import './styles/general.scss';
+@import './styles/vars.scss';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+
+  li a{
+    text-decoration: none;
+    color: black;
+  }
 }
 </style>

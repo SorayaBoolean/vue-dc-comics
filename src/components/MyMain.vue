@@ -1,5 +1,6 @@
 <template>
     <div id="main">
+        
         <section class="main container">
             <section class="contents"> 
                 <div class="contents_row">
@@ -9,7 +10,8 @@
             </section>
 
             <section class="shop_nav">
-                <ul>
+                <div class="shop_nav_list">
+                    <ul>
                     <li> 
                         <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
                         <a href="#">DIGITAL COMICS</a>
@@ -31,6 +33,8 @@
                         <a href="#">DC POWER VISA</a>
                     </li>
                 </ul>
+                </div>
+                
             </section>
 
         </section>
@@ -47,9 +51,6 @@
     }
 
 </script>
-
-
-
 
 <style scoped lang="scss">
 
@@ -73,19 +74,27 @@
     background-color: #0282F9;
     height: 100px;
 
+     .shop_nav_list {
+            margin:auto;
+            height: 100px;
+            width: 1000px;
+         }
+
     ul{
         height: 100%;
         max-width: 1000px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items:center ;
         margin:auto;
          li{
             display:flex;
             align-items: center;
-            margin: 20px;
+            margin: 0px;
             font-weight: bold;
             font-size: x-small;
+
+    ;
             a{
                 color:white;
             }    
@@ -95,6 +104,8 @@
             widows: 70px;
             margin: 10px;
          }
+
+        
     }
 
 }

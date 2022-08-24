@@ -1,5 +1,15 @@
 <template>
-  <h1>Header</h1>
+  <div>
+    
+    <nav>
+        <a href="#">
+            <img src="@/assets/img/dc-logo.png" alt="logo">
+        </a>
+
+    </nav>
+
+
+  </div>
 </template>
 
 <script>

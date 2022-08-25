@@ -5,43 +5,25 @@
         <div class="header_footer">
 
             <div class="footer_menu_list">
-                <ul>
+                <ul v-for="(comic, index) in dCcomics" :key="index">
                     <h5>DC COMICS</h5>
-                    <li> <a href="#">CHARACTERS</a></li>
-                    <li> <a href="#">COMICS</a></li>
-                    <li> <a href="#">MOVIES</a></li>
-                    <li> <a href="#">TV</a></li>
-                    <li> <a href="#">GAMES</a></li>
-                    <li> <a href="#">COLLECTIBLES</a></li>
+                    <li> 
+                      <a :href="comic.url">{{comic.text}}</a>
+                    </li>
                 </ul>
 
                 <ul>
                     <h5>DC COMICS</h5>
                     <li> <a href="#">CHARACTERS</a></li>
-                    <li> <a href="#">COMICS</a></li>
-                    <li> <a href="#">MOVIES</a></li>
-                    <li> <a href="#">TV</a></li>
-                    <li> <a href="#">GAMES</a></li>
-                    <li> <a href="#">COLLECTIBLES</a></li>
-                    <li> <a href="#">COMICS</a></li>
-                    <li> <a href="#">MOVIES</a></li>
-                    <li> <a href="#">TV</a></li>
-                    <li> <a href="#">GAMES</a></li>
-                    <li> <a href="#">COLLECTIBLES</a></li>
                 </ul>
                 <ul>
                     <h5>DC COMICS</h5>
                     <li> <a href="#">CHARACTERS</a></li>
-                    <li> <a href="#">COMICS</a></li>
-                    <li> <a href="#">MOVIES</a></li>
-                    <li> <a href="#">TV</a></li>
-                    <li> <a href="#">GAMES</a></li>
                 </ul>
 
                  <ul class="position">
                     <h5>DC COMICS</h5>
                     <li> <a href="#">CHARACTERS</a></li>
-                    <li> <a href="#">COMICS</a></li>
                 </ul>
             </div>
         
@@ -81,6 +63,89 @@
     name: 'MyFooter',
     data () {
         return {
+            dCcomics: [
+          {text: 'Characters',
+            url: '#'
+          },
+            {text: 'Comics',
+            url: '#',
+          },
+            {text: 'Movies',
+            url: '#',
+          },
+           {text: 'Tv',
+            url: '#',
+          },
+            {text: 'News',
+            url: '#',
+          },
+            {text: 'Fans',
+            url: '#',
+            }
+          ],
+
+           Dc: [
+          {text: 'Terms of use',
+            url: '#'
+          },
+            {text: 'Privacy Policy (New)',
+            url: '#',
+          },
+            {text: 'Ad Choiches',
+            url: '#',
+          },
+           {text: 'Advertising',
+            url: '#',
+          },
+            {text: 'Jobs',
+            url: '#',
+          },
+            {text: 'Subscriptions',
+            url: '#',
+            },
+            {text: 'Talent Workshops',
+            url: '#',
+          },
+            {text: 'CPSC Certificates',
+            url: '#',
+          },
+           {text: 'Ratings',
+            url: '#',
+          },
+            {text: 'Shop Help',
+            url: '#',
+          },
+            {text: 'Contact us',
+            url: '#',
+            }
+          ],
+
+           Sites: [
+          {text: 'DC',
+            url: '#'
+          },
+            {text: 'Mad Magazine',
+            url: '#',
+          },
+            {text: 'DC Kids',
+            url: '#',
+          },
+           {text: 'DC Universe',
+            url: '#',
+          },
+            {text: 'DC Power Visa',
+            url: '#',
+          }
+          ],
+
+           shop: [
+          {text: 'Shop DC',
+            url: '#'
+          },
+            {text: 'Shop DC Collectibles ',
+            url: '#',
+          }
+          ]
 
         }
     }

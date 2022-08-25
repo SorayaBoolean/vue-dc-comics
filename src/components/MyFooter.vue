@@ -5,26 +5,39 @@
         <div class="header_footer">
 
             <div class="footer_menu_list">
-                <ul v-for="(comic, index) in dCcomics" :key="index">
+                <div>
                     <h5>DC COMICS</h5>
+                    <ul v-for="(comic, index) in dCcomics" :key="index">
                     <li> 
                       <a :href="comic.url">{{comic.text}}</a>
                     </li>
-                </ul>
-
-                <ul>
-                    <h5>DC COMICS</h5>
-                    <li> <a href="#">CHARACTERS</a></li>
-                </ul>
-                <ul>
-                    <h5>DC COMICS</h5>
-                    <li> <a href="#">CHARACTERS</a></li>
-                </ul>
-
-                 <ul class="position">
-                    <h5>DC COMICS</h5>
-                    <li> <a href="#">CHARACTERS</a></li>
-                </ul>
+                    </ul>   
+                </div>
+                <div>
+                    <h5>DC</h5>
+                    <ul v-for="(doc, index) in Dc" :key="index">
+                    <li> 
+                      <a :href="doc.url">{{doc.text}}</a>
+                    </li>
+                    </ul>   
+                </div>
+                <div>
+                    <h5>SITES</h5>
+                    <ul v-for="(site, index) in Sites" :key="index">
+                    <li> 
+                      <a :href="site.url">{{site.text}}</a>
+                    </li>
+                    </ul>   
+                </div>
+                  <div>
+                     <h5 class="position">SHOP</h5>
+                    <ul class="position" v-for="(shopping, index) in shop" :key="index">
+                    <li> 
+                      <a :href="shopping.url">{{shopping.text}}</a>
+                    </li>
+                    </ul>   
+                </div>
+               
             </div>
         
         <div class="Logo_Container">
@@ -147,6 +160,7 @@
           }
           ]
 
+          
         }
     }
 
@@ -163,7 +177,8 @@
     display:flex;
     flex-wrap: wrap;
 
-    ul {
+    div{
+
         margin: 10px;
     }
 }
@@ -195,7 +210,7 @@
 }
  .position {
         position: relative;
-        top: -90px;
+        bottom:90px;
     }
 
 .bottom_footer {

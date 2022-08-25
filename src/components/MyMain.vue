@@ -3,9 +3,29 @@
         
         <section class="main container">
             <section class="contents"> 
+
+                <div class="jumbotron"></div>
+                   
                 <div class="contents_row">
-                    <h3> >Contents goes here </h3> 
+                    <div class="container products-list">
+
+                        <div class="product_card">
+                            <img src="" alt="">
+                            <h4>Titolo</h4>
+                        </div>
+                         <div class="product_card">
+                            <img src="" alt="">
+                            <h4>Titolo</h4>
+                        </div>
+                         <div class="product_card">
+                            <img src="" alt="">
+                            <h4>Titolo</h4>
+                        </div>
+                    </div>
                 </div>
+                
+                    
+                
                 
             </section>
 
@@ -65,17 +85,35 @@
 
 .contents {
     background-color: #1C1C1C;
-    height: 80px;
+    height: 500px;
     color: white;
+
+      .jumbotron {
+        background-image: url(../assets/img/jumbotron.jpg);
+        background-repeat: no-repeat;
+         background-size: cover;
+        width:100vw;
+        height: 270px;
+            }
+        }
 
     .contents_row{
         margin: auto;
-        height: 100%;
         max-width: 1000px;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        
+
     }
-}
+
+    .products-list{
+        display: flex;
+        border: 1px solid red;
+
+    }
+
+    
 
 .shop_nav {
     display: flex;
@@ -102,7 +140,6 @@
             margin: 0px;
             font-weight: bold;
             font-size: x-small;
-
     ;
             a{
                 color:white;
@@ -113,9 +150,10 @@
             widows: 70px;
             margin: 10px;
          }
-
-        
+ 
     }
+
+
 
 }
 

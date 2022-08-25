@@ -53,13 +53,11 @@
             <div id="follow_us">
                 <h4>FOLLOW US!</h4>
                 <div id="social_links">
-                     <ul>
-                        <li>
-                          <a href="#">
-                            <img src="@/assets/img/footer-facebook.png" alt="logo">
-                          </a>
-                        </li>
-                     </ul>
+                    <img src="@/assets/img/footer-facebook.png" alt="logo-fb">
+                    <img src="@/assets/img/footer-twitter.png" alt="logo-tw">
+                    <img src="@/assets/img/footer-youtube.png" alt="logo-y">
+                    <img src="@/assets/img/footer-pinterest.png" alt="logo-p">
+                    <img src="@/assets/img/footer-facebook.png" alt=""> 
                 </div>
             </div>
 
@@ -161,7 +159,6 @@
             url: '#',
           }
           ]
-
           
         }
     }
@@ -246,6 +243,7 @@
 
     h4{
       margin-top: 10px;
+      color:#0282F9;
     }
     
 }

@@ -7,16 +7,10 @@
         </a>
 
         <ul>
-            <li> <a href="#">CHARACTERS</a></li>
-            <li> <a href="#">COMICS</a></li>
-            <li> <a href="#">MOVIES</a></li>
-            <li> <a href="#">TV</a></li>
-            <li> <a href="#">GAMES</a></li>
-            <li> <a href="#">COLLECTIBLES</a></li>
-            <li> <a href="#">VIDEOS</a></li>
-            <li> <a href="#">FANS</a></li>
-            <li> <a href="#">NEWS</a></li>
-            <li> <a href="#">SHOP</a></li>
+            <li v-for="(link,index) in links" :key="index"> 
+              <a :href="link.url">{{link.text}}</a>
+            </li>
+            
         </ul>
 
     </nav>
@@ -28,7 +22,53 @@
 <script>
 
     export default {
-    name: 'MyHeader'
+    name: 'MyHeader',
+    data () {
+      return {
+        links: [
+          {text: 'Characters',
+            url: '#',
+            active: false
+          },
+            {text: 'Comics',
+            url: '#',
+            active: false
+          },
+            {text: 'Movies',
+            url: '#',
+            active: true
+          },
+           {text: 'Tv',
+            url: '#',
+            active: false
+          },
+            {text: 'Games',
+            url: '#',
+            active: false
+          },
+            {text: 'Collectibles',
+            url: '#',
+            active: true
+          },
+           {text: 'Videos',
+            url: '#',
+            active: false
+          },
+          {text: 'Fans',
+            url: '#',
+            active: false
+          },
+          {text: 'News',
+            url: '#',
+            active: false
+          }
+
+
+        ]
+
+      }
+
+        }
 
     }
 

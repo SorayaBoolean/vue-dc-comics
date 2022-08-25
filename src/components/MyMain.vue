@@ -12,25 +12,9 @@
             <section class="shop_nav">
                 <div class="shop_nav_list">
                     <ul>
-                    <li> 
+                    <li v-for="(text,index) in menu" :key="index"> 
                         <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
-                        <a href="#">DIGITAL COMICS</a>
-                    </li>
-                    <li> 
-                        <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
-                        <a href="#">DC MERCHANDISE</a>
-                    </li>
-                    <li> 
-                        <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
-                        <a href="#">SUBSCRIPTION</a>
-                    </li>
-                    <li> 
-                        <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
-                        <a href="#">COMIC SHOP LOCATOR</a>
-                    </li>
-                    <li> 
-                        <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
-                        <a href="#">DC POWER VISA</a>
+                        <a :href="text.url">{{text.text}}</a>
                     </li>
                 </ul>
                 </div>
@@ -46,7 +30,32 @@
 <script>
 
     export default {
-    name: 'MyMain'
+    name: 'MyMain',
+    data () {
+      return {
+        menu: [
+          {text: 'DIGITAL COMICS',
+            url: '#',
+            img: '', 
+          },
+            {text: 'DC MERCHANDISE',
+            url: '#',
+            img: '',
+          },
+            {text: 'SUBSCRIPTION',
+             url: '#',
+             img: '', 
+          },
+           {text: 'COMIC SHOP LOCATOR',
+            url: '#',
+            img: '',
+          },
+           {text: 'DC POWER VISA',
+            url: '#',
+            img: '',
+          }
+      ]
+      }}
 
     }
 

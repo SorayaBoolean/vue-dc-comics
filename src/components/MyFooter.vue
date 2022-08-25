@@ -51,13 +51,15 @@
                 <h4><a href="#">SIGN-UP NOW!</a></h4>
             </div>
             <div id="follow_us">
-                <h4>Follow Us!</h4>
+                <h4>FOLLOW US!</h4>
                 <div id="social_links">
-                    <img src="" alt="facebook">
-                    <img src="" alt="twitter">
-                    <img src="" alt="youtube">
-                    <img src="" alt="Pintrest">
-                    <img src="" alt="Maps">
+                     <ul>
+                        <li>
+                          <a href="#">
+                            <img src="@/assets/img/footer-facebook.png" alt="logo">
+                          </a>
+                        </li>
+                     </ul>
                 </div>
             </div>
 
@@ -237,8 +239,13 @@
 
 #follow_us{
     display: flex;
+
     img{
         margin: 0px 10px ;
+    }
+
+    h4{
+      margin-top: 10px;
     }
     
 }

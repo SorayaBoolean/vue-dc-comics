@@ -6,13 +6,42 @@
 
             <div class="footer_menu_list">
                 <ul>
-                    <h3>DC COMICS</h3>
+                    <h5>DC COMICS</h5>
                     <li> <a href="#">CHARACTERS</a></li>
                     <li> <a href="#">COMICS</a></li>
                     <li> <a href="#">MOVIES</a></li>
                     <li> <a href="#">TV</a></li>
                     <li> <a href="#">GAMES</a></li>
                     <li> <a href="#">COLLECTIBLES</a></li>
+                </ul>
+
+                <ul>
+                    <h5>DC COMICS</h5>
+                    <li> <a href="#">CHARACTERS</a></li>
+                    <li> <a href="#">COMICS</a></li>
+                    <li> <a href="#">MOVIES</a></li>
+                    <li> <a href="#">TV</a></li>
+                    <li> <a href="#">GAMES</a></li>
+                    <li> <a href="#">COLLECTIBLES</a></li>
+                    <li> <a href="#">COMICS</a></li>
+                    <li> <a href="#">MOVIES</a></li>
+                    <li> <a href="#">TV</a></li>
+                    <li> <a href="#">GAMES</a></li>
+                    <li> <a href="#">COLLECTIBLES</a></li>
+                </ul>
+                <ul>
+                    <h5>DC COMICS</h5>
+                    <li> <a href="#">CHARACTERS</a></li>
+                    <li> <a href="#">COMICS</a></li>
+                    <li> <a href="#">MOVIES</a></li>
+                    <li> <a href="#">TV</a></li>
+                    <li> <a href="#">GAMES</a></li>
+                </ul>
+
+                 <ul class="position">
+                    <h5>DC COMICS</h5>
+                    <li> <a href="#">CHARACTERS</a></li>
+                    <li> <a href="#">COMICS</a></li>
                 </ul>
             </div>
         
@@ -49,7 +78,12 @@
 <script>
 
     export default {
-    name: 'MyFooter'
+    name: 'MyFooter',
+    data () {
+        return {
+
+        }
+    }
 
     }
 
@@ -58,6 +92,16 @@
 
 
 <style scoped lang="scss">
+
+.footer_menu_list {
+    max-width: 300px;
+    display:flex;
+    flex-wrap: wrap;
+
+    ul {
+        margin: 10px;
+    }
+}
 
 .header_footer{
     display: flex;
@@ -75,15 +119,19 @@
         margin: 20px 0px;
     }
 
-    h3{
+    h5{
         color: white;
     }
 
     ul li a{
-        color: white;
+        color: grey;
         font-size: xx-small;
     }
 }
+ .position {
+        position: relative;
+        top: -90px;
+    }
 
 .bottom_footer {
     height: 80px;

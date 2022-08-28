@@ -7,16 +7,9 @@
                 <div class="jumbotron"></div>
                    
                 <div class="contents_row">
-
-                    <div v-for="(product, index) in products" :key="index" class="product_card">
-                        <div class="img_box">
-                            <img :src="product.thumb" alt="">
-                        </div>
-                        <div class="title_box">
-                            <h4>{{product.series}}</h4>
-                        </div>
-                    </div>  
+                    <SingleProduct v-for="(product, index) in products" :key="index" :details="product"/>
                 </div> 
+               
                    
                               
             </section>
@@ -38,9 +31,13 @@
 </template>
 
 <script>
+    import SingleProduct from './SingleProduct.vue'
 
     export default {
     name: 'MyMain',
+    components: {
+        SingleProduct
+    },
     data () {
       return {
         menu: [
@@ -172,34 +169,8 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
- 
-
-         .product_card{
-            margin: 20px 10px;
-            height: 200px;
-            width: calc(100% / 7);
-
-            .title_box {
-                h4{
-                    font-weight: 100;
-                    margin: 10px 0px;
-                }
-            }
-
-            .img_box{
-                height: 70% ;
-
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit:cover;
-                    object-position: 0px 5px;
-                   
-                }
-            }
-         }
     }
-
+ 
     .products-list{
         display: flex;
         width: 1000px;
@@ -207,8 +178,6 @@
         border: 1px solid red;
 
     }
-
-    
 
 .shop_nav {
     display: flex;

@@ -98,7 +98,7 @@
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    max-width: 1000px;
+    width: 1000px;
 
     img {
       height: 70px;
